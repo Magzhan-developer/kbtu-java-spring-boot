@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: time-travelers-diary
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ttd_db
+    username: ttd_user
+    password: ttd_password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: ttd-group
