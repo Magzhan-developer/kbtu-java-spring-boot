@@ -1,0 +1,64 @@
+# =====================
+# IntelliJ IDEA
+# =====================
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# =====================
+# Maven / Gradle
+# =====================
+target/
+build/
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+
+# =====================
+# Logs
+# =====================
+*.log
+logs/
+
+# =====================
+# Spring Boot
+# =====================
+application-local.properties
+application-dev.properties
+
+# =====================
+# OS files
+# =====================
+.DS_Store
+Thumbs.db
+
+# =====================
+# Environment variables
+# =====================
+.env
+
+# =====================
+# Kafka / Docker local artifacts (если есть локальные файлы)
+# =====================
+*.pid
+
+# =====================
+# Temporary files
+# =====================
+*.tmp
+*.swp
+*.swo
+
+# =====================
+# Coverage / reports
+# =====================
+coverage/
+*.lcov
+
+# =====================
+# IDE caches
+# =====================
+*.class
+*.hprof
