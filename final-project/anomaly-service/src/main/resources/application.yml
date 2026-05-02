@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: anomaly-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/${DB_NAME:timetraveldb}
+    username: ${DB_USER:postgres}
+    password: ${DB_PASSWORD:postgres_super_password}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  kafka:
+    bootstrap-servers: localhost:29092
+    consumer:
+      group-id: anomaly-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+server:
+  port: 8081
